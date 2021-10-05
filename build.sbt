@@ -58,6 +58,7 @@ lazy val `scalajs-client` = (project in file("scalajs-client"))
     libraryDependencies ++= Seq(
       "org.scala-js"                      %%% "scalajs-dom"     % "1.2.0",
       "io.github.cquiroz"                 %%% "scala-java-time" % "2.3.0",
+      "com.payalabs" %%% "scalajs-react-bridge" % "0.8.5",
       "com.github.japgolly.scalajs-react" %%% "core"            % scalaJsReactV,
       "com.github.japgolly.scalajs-react" %%% "extra"           % scalaJsReactV),
     Compile / npmDependencies ++= Seq("react" -> reactJsV, "react-dom" -> reactJsV))
